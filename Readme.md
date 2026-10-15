@@ -4,9 +4,9 @@ A simple banking application built using Java OOP concepts, HTML, CSS, and JavaS
 
 🔗 Live Demo
 
-Click here to view My Bank Website
+Click here to view My Bank Website(https://amitkeshri001.github.io/My-Bank-Banking_App/)
 
-View Source Code on GitHub
+View Source Code on GitHub(https://github.com/AmitKeshri001/My-Bank-Banking_App)
 
 ## ✨ Features
 
