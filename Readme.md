@@ -2,6 +2,12 @@
 
 A simple banking application built using Java OOP concepts, HTML, CSS, and JavaScript. This project demonstrates basic banking operations through a user-friendly interface.
 
+🔗 Live Demo
+
+Click here to view My Bank Website
+
+View Source Code on GitHub
+
 ## ✨ Features
 
 - PIN-based demo login
