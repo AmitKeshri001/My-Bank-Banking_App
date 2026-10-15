@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bank - Passbook</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Bank Header -->
+    <div class="header">
+        <div class="logo">MB</div>
+        <h1>MY BANK</h1>
+        <p>PASSBOOK BANKING</p>
+    </div>
+
+    <!-- Passbook -->
+    <div class="passbook">
+        <div class="passbook-content">
+
+            <!-- Login Screen -->
+            <div id="loginScreen">
+                <h2>Enter PIN to Continue</h2>
+                <p class="label">Account: Amit Kumar</p>
+
+                <div class="pin-dots" id="pinDots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="keypad">
+                    <button class="key" data-number="1">1</button>
+                    <button class="key" data-number="2">2</button>
+                    <button class="key" data-number="3">3</button>
+
+                    <button class="key" data-number="4">4</button>
+                    <button class="key" data-number="5">5</button>
+                    <button class="key" data-number="6">6</button>
+
+                    <button class="key" data-number="7">7</button>
+                    <button class="key" data-number="8">8</button>
+                    <button class="key" data-number="9">9</button>
+
+                    <button id="clearBtn" class="danger">Clear</button>
+                    <button class="key" data-number="0">0</button>
+                    <button id="backBtn">⌫</button>
+                </div>
+
+                <p id="loginMessage" class="message"></p>
+                <p class="hint">Demo PIN: 2580</p>
+            </div>
+
+            <!-- Dashboard -->
+            <div id="dashboard" class="hidden">
+
+                <h2 id="welcome">Welcome, Amit!</h2>
+                <p class="account-info">
+                    Account No. •••• 2401 | Saving Account
+                </p>
+
+                <!-- Balance -->
+                <div class="balance-card">
+                    <p>AVAILABLE BALANCE</p>
+                    <h2 id="balance">₹1,000</h2>
+                </div>
+
+                <!-- Banking Menu -->
+                <div class="menu">
+                    <button id="depositBtn">💰 Deposit</button>
+                    <button id="withdrawBtn">💸 Withdraw</button>
+                    <button id="detailsBtn">📋 Account Details</button>
+                    <button id="statementBtn">🧾 Mini Statement</button>
+                    <button id="logoutBtn" class="logout">Logout</button>
+                </div>
+
+                <!-- Deposit / Withdraw Panel -->
+                <div id="actionPanel" class="hidden">
+                    <h3 id="actionTitle">Enter Amount</h3>
+
+                    <input
+                            type="number"
+                            id="amountInput"
+                            placeholder="Enter amount in ₹"
+                            min="1"
+                    >
+
+                    <div class="action-buttons">
+                        <button id="confirmBtn">Confirm</button>
+                        <button id="cancelBtn" class="cancel">Cancel</button>
+                    </div>
+                </div>
+
+                <!-- Account Details -->
+                <div id="detailsPanel" class="hidden"></div>
+
+                <!-- Transaction History -->
+                <div class="statement">
+                    <h3>Recent Transactions</h3>
+                    <div id="transactionList">
+                        <p class="empty">No transactions yet.</p>
+                    </div>
+                </div>
+
+                <p id="message" class="message"></p>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>Educational Banking Demo | Not a Real Bank</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
